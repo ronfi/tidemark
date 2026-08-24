@@ -3,6 +3,8 @@
 > **Bands, not points. Scored, not spun.**
 > **档位,不是点位。记分,不是嘴炮。**
 
+**🌊 在线主页:<https://ronfi.github.io/tidemark/>**(档位图 / 情绪六维面板 / 记分账本,每日更新)
+
 Tidemark 公开维护两样东西:
 
 1. **加密周期高点档位(Cycle-Top Bands)** —— 对主流币下一轮牛市高点的推测,以**档位区间 + 偏斜方向**发布,**预注册、带证伪条件、触发后不得回改**。
