@@ -3,7 +3,7 @@
   "registered": "2026-08-24",
   "source_methodology": "n=3 cycle decay (top-to-top & low-to-top) x supply-side cross-exam; bands are conditional scenarios, NOT trading signals",
   "preconditions": [
-    "牛市确认窗 2026-09-26 ~ 10-31 判定通过",
+    "牛市确认窗 2026-09-26 ~ 10-31 判定通过(判定依据为内部预注册判据,判定日连同判据与数据一并公开,见账本 SC-001)",
     "2026-06-30 低点(BTC 58,605 币安永续收盘)守住",
     "周期结构不发生断裂(ETF体制/DAT品类/流动性混淆判别式见 scorecard)"
   ],
