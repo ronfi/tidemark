@@ -1,0 +1,145 @@
+{
+  "version": "1.0",
+  "registered": "2026-08-24",
+  "source_methodology": "n=3 cycle decay (top-to-top & low-to-top) x supply-side cross-exam; bands are conditional scenarios, NOT trading signals",
+  "preconditions": [
+    "牛市确认窗 2026-09-26 ~ 10-31 判定通过",
+    "2026-06-30 低点(BTC 58,605 币安永续收盘)守住",
+    "周期结构不发生断裂(ETF体制/DAT品类/流动性混淆判别式见 scorecard)"
+  ],
+  "horizon": "下轮顶点视界;若快周期情景兑现,取保守档",
+  "revision_policy": "预注册:登记后档位不得回改;重估仅可通过新增版本条目并保留旧档",
+  "tiers": {
+    "mainstream": {
+      "note": "六币衰减律+供给面双重支撑",
+      "coins": {
+        "BTC": {
+          "conservative": [
+            168000,
+            190000
+          ],
+          "base": [
+            190000,
+            235000
+          ],
+          "optimistic": 270000,
+          "main_band": "base",
+          "skew": "left",
+          "skew_reason": "ETF赎回通道+DAT强制卖出条款",
+          "anchor_low_2026": 58605
+        },
+        "ETH": {
+          "conservative": [
+            4800,
+            5300
+          ],
+          "base": [
+            5000,
+            6500
+          ],
+          "optimistic": 7800,
+          "main_band": "base",
+          "skew": "right",
+          "skew_reason": "ETF质押=上轮不存在的需求原语",
+          "anchor_low_2026": 1567
+        },
+        "SOL": {
+          "conservative": [
+            260,
+            290
+          ],
+          "base": [
+            250,
+            310
+          ],
+          "optimistic": 370,
+          "main_band": "base",
+          "skew": "left-ish",
+          "skew_reason": "费用100%归验证者;SIMD-0550/0547为改写事件",
+          "anchor_low_2026": 62.16
+        },
+        "BNB": {
+          "conservative": [
+            1700,
+            1960
+          ],
+          "base": [
+            1370,
+            1640
+          ],
+          "optimistic": 2200,
+          "main_band": "base",
+          "skew": "symmetric",
+          "skew_reason": "通缩销毁与单点监管风险相抵",
+          "anchor_low_2026": 546.8
+        },
+        "XRP": {
+          "conservative": [
+            2.5,
+            3.5
+          ],
+          "base": [
+            4.6,
+            5.3
+          ],
+          "optimistic": null,
+          "main_band": "conservative",
+          "skew": "left",
+          "skew_reason": "托管净释放≈+6%/年为最大供给悬顶",
+          "anchor_low_2026": 0.993
+        },
+        "DOGE": {
+          "conservative": [
+            0.3,
+            0.45
+          ],
+          "base": [
+            0.3,
+            0.45
+          ],
+          "optimistic": null,
+          "main_band": "conservative",
+          "skew": "left",
+          "skew_reason": "永续通胀3.4%/年×注意力半衰;基准判断=可能不破前顶",
+          "conditional": "注意力冲击事件",
+          "anchor_low_2026": 0.0691
+        }
+      }
+    },
+    "new_cycle": {
+      "note": "机制型档位,无衰减律支撑,置信层级最低;任一机制事件落地当日重估整行(重估=新增版本条目)",
+      "coins": {
+        "ZEC": {
+          "conservative": [
+            900,
+            1100
+          ],
+          "base": [
+            1200,
+            1800
+          ],
+          "optimistic": 2600,
+          "main_band": "base",
+          "skew": "fat-both-tails",
+          "skew_reason": "右:ZCSH ETF二元+逼空结构;左:审计悖论尾部",
+          "anchor_low_2026": 399.17
+        },
+        "HYPE": {
+          "conservative": [
+            90,
+            110
+          ],
+          "base": [
+            120,
+            170
+          ],
+          "optimistic": 250,
+          "main_band": "base",
+          "skew": "left",
+          "skew_reason": "收入下行+滴漏/回购38:1;右尾=CFTC通道",
+          "anchor_low_2026": 53.31
+        }
+      }
+    }
+  }
+}
