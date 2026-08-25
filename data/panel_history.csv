@@ -1,4 +1,4 @@
-date,funding7d_pct,gls,top_ls,taker_ls,oi_pctl_90d,fng,btc_close
+date,funding7d_pct,gls,top_ls,taker_ls,oi_pctl_90d,fng,close
 2021-01-01,0.8536,1.574,1.186,1.099,100.0,94,29337.16
 2021-01-02,0.9622,1.578,1.202,1.877,100.0,94,32199.91
 2021-01-03,1.2395,2.007,1.203,0.75,98.9,93,33054.53
