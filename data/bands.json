@@ -53,10 +53,11 @@
             310
           ],
           "optimistic": 370,
-          "main_band": "base",
+          "main_band": "conservative",
           "skew": "left-ish",
           "skew_reason": "费用100%归验证者;SIMD-0550/0547为改写事件",
-          "anchor_low_2026": 62.16
+          "anchor_low_2026": 62.16,
+          "note": "2026-08-26 编码修正:主档由 base 改为 conservative(顶对顶法 260-290)——对齐 2026-08-23 已登记的方法裁决(SOL 单币放弃低→顶法,FTX 深坑失真);此为实现对齐登记裁决的修正,非档位重估。两法区间为嵌套关系(260-290 ⊂ 250-310),列名\"保守/基准\"是方法名而非严格高低序"
         },
         "BNB": {
           "conservative": [
