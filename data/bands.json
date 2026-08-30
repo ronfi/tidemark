@@ -1,146 +1,173 @@
 {
-  "version": "1.0",
-  "registered": "2026-08-24",
-  "source_methodology": "n=3 cycle decay (top-to-top & low-to-top) x supply-side cross-exam; bands are conditional scenarios, NOT trading signals",
-  "preconditions": [
-    "牛市确认窗 2026-09-26 ~ 10-31 判定通过(判定依据为内部预注册判据,判定日连同判据与数据一并公开,见账本 SC-001)",
-    "2026-06-30 低点(BTC 58,605 币安永续收盘)守住",
-    "周期结构不发生断裂(ETF体制/DAT品类/流动性混淆判别式见 scorecard)"
-  ],
-  "horizon": "下轮顶点视界;若快周期情景兑现,取保守档",
-  "revision_policy": "预注册:登记后档位不得回改;重估仅可通过新增版本条目并保留旧档",
-  "tiers": {
-    "mainstream": {
-      "note": "六币衰减律+供给面双重支撑",
-      "coins": {
-        "BTC": {
-          "conservative": [
-            168000,
-            190000
-          ],
-          "base": [
-            190000,
-            235000
-          ],
-          "optimistic": 270000,
-          "main_band": "base",
-          "skew": "left",
-          "skew_reason": "ETF赎回通道+DAT强制卖出条款",
-          "anchor_low_2026": 58605
-        },
-        "ETH": {
-          "conservative": [
-            4800,
-            5300
-          ],
-          "base": [
-            5000,
-            6500
-          ],
-          "optimistic": 7800,
-          "main_band": "base",
-          "skew": "right",
-          "skew_reason": "ETF质押=上轮不存在的需求原语",
-          "anchor_low_2026": 1567
-        },
-        "SOL": {
-          "conservative": [
-            260,
-            290
-          ],
-          "base": [
-            250,
-            310
-          ],
-          "optimistic": 370,
-          "main_band": "conservative",
-          "skew": "left-ish",
-          "skew_reason": "费用100%归验证者;SIMD-0550/0547为改写事件",
-          "anchor_low_2026": 62.16,
-          "note": "2026-08-26 编码修正:主档由 base 改为 conservative(顶对顶法 260-290)——对齐 2026-08-23 已登记的方法裁决(SOL 单币放弃低→顶法,FTX 深坑失真);此为实现对齐登记裁决的修正,非档位重估。两法区间为嵌套关系(260-290 ⊂ 250-310),列名\"保守/基准\"是方法名而非严格高低序"
-        },
-        "BNB": {
-          "conservative": [
-            1700,
-            1960
-          ],
-          "base": [
-            1370,
-            1640
-          ],
-          "optimistic": 2200,
-          "main_band": "base",
-          "skew": "symmetric",
-          "skew_reason": "通缩销毁与单点监管风险相抵",
-          "anchor_low_2026": 546.8
-        },
-        "XRP": {
-          "conservative": [
-            2.5,
-            3.5
-          ],
-          "base": [
-            4.6,
-            5.3
-          ],
-          "optimistic": null,
-          "main_band": "conservative",
-          "skew": "left",
-          "skew_reason": "托管净释放≈+6%/年为最大供给悬顶",
-          "anchor_low_2026": 0.993
-        },
-        "DOGE": {
-          "conservative": [
-            0.3,
-            0.45
-          ],
-          "base": [
-            0.3,
-            0.45
-          ],
-          "optimistic": null,
-          "main_band": "conservative",
-          "skew": "left",
-          "skew_reason": "永续通胀3.4%/年×注意力半衰;基准判断=可能不破前顶",
-          "conditional": "注意力冲击事件",
-          "anchor_low_2026": 0.0691
-        }
-      }
+ "version": "1.0",
+ "registered": "2026-08-24",
+ "source_methodology": "n=3 cycle decay (top-to-top & low-to-top) x supply-side cross-exam; bands are conditional scenarios, NOT trading signals",
+ "preconditions": [
+  "牛市确认窗 2026-09-26 ~ 10-31 判定通过(判定依据为内部预注册判据,判定日连同判据与数据一并公开,见账本 SC-001)",
+  "2026-06-30 低点(BTC 58,605 币安永续收盘)守住",
+  "周期结构不发生断裂(ETF体制/DAT品类/流动性混淆判别式见 scorecard)"
+ ],
+ "horizon": "下轮顶点视界;若快周期情景兑现,取保守档",
+ "revision_policy": "预注册:登记后档位不得回改;重估仅可通过新增版本条目并保留旧档",
+ "tiers": {
+  "mainstream": {
+   "note": "六币衰减律+供给面双重支撑",
+   "coins": {
+    "BTC": {
+     "conservative": [
+      168000,
+      190000
+     ],
+     "base": [
+      190000,
+      235000
+     ],
+     "optimistic": 270000,
+     "main_band": "base",
+     "skew": "left",
+     "skew_reason": "ETF赎回通道+DAT强制卖出条款",
+     "anchor_low_2026": 58605
     },
-    "new_cycle": {
-      "note": "机制型档位,无衰减律支撑,置信层级最低;任一机制事件落地当日重估整行(重估=新增版本条目)",
-      "coins": {
-        "ZEC": {
-          "conservative": [
-            900,
-            1100
-          ],
-          "base": [
-            1200,
-            1800
-          ],
-          "optimistic": 2600,
-          "main_band": "base",
-          "skew": "fat-both-tails",
-          "skew_reason": "右:ZCSH ETF二元+逼空结构;左:审计悖论尾部",
-          "anchor_low_2026": 399.17
-        },
-        "HYPE": {
-          "conservative": [
-            90,
-            110
-          ],
-          "base": [
-            120,
-            170
-          ],
-          "optimistic": 250,
-          "main_band": "base",
-          "skew": "left",
-          "skew_reason": "收入下行+滴漏/回购38:1;右尾=CFTC通道",
-          "anchor_low_2026": 53.31
-        }
-      }
+    "ETH": {
+     "conservative": [
+      4800,
+      5300
+     ],
+     "base": [
+      5000,
+      6500
+     ],
+     "optimistic": 7800,
+     "main_band": "base",
+     "skew": "right",
+     "skew_reason": "ETF质押=上轮不存在的需求原语",
+     "anchor_low_2026": 1567
+    },
+    "SOL": {
+     "conservative": [
+      260,
+      290
+     ],
+     "base": [
+      250,
+      310
+     ],
+     "optimistic": 370,
+     "main_band": "conservative",
+     "skew": "left-ish",
+     "skew_reason": "费用100%归验证者;SIMD-0550/0547为改写事件",
+     "anchor_low_2026": 62.16,
+     "note": "2026-08-26 编码修正:主档由 base 改为 conservative(顶对顶法 260-290)——对齐 2026-08-23 已登记的方法裁决(SOL 单币放弃低→顶法,FTX 深坑失真);此为实现对齐登记裁决的修正,非档位重估。两法区间为嵌套关系(260-290 ⊂ 250-310),列名\"保守/基准\"是方法名而非严格高低序"
+    },
+    "BNB": {
+     "conservative": [
+      1700,
+      1960
+     ],
+     "base": [
+      1370,
+      1640
+     ],
+     "optimistic": 2200,
+     "main_band": "base",
+     "skew": "symmetric",
+     "skew_reason": "通缩销毁与单点监管风险相抵",
+     "anchor_low_2026": 546.8
+    },
+    "XRP": {
+     "conservative": [
+      2.5,
+      3.5
+     ],
+     "base": [
+      4.6,
+      5.3
+     ],
+     "optimistic": null,
+     "main_band": "conservative",
+     "skew": "left",
+     "skew_reason": "托管净释放≈+6%/年为最大供给悬顶",
+     "anchor_low_2026": 0.993
+    },
+    "DOGE": {
+     "conservative": [
+      0.3,
+      0.45
+     ],
+     "base": [
+      0.3,
+      0.45
+     ],
+     "optimistic": null,
+     "main_band": "conservative",
+     "skew": "left",
+     "skew_reason": "永续通胀3.4%/年×注意力半衰;基准判断=可能不破前顶",
+     "conditional": "注意力冲击事件",
+     "anchor_low_2026": 0.0691
     }
+   }
+  },
+  "new_cycle": {
+   "note": "机制型档位,无衰减律支撑,置信层级最低;任一机制事件落地当日重估整行(重估=新增版本条目)",
+   "coins": {
+    "ZEC": {
+     "conservative": [
+      900,
+      1100
+     ],
+     "base": [
+      1200,
+      1800
+     ],
+     "optimistic": 2600,
+     "main_band": "base",
+     "skew": "fat-both-tails",
+     "skew_reason": "右:ZCSH ETF二元+逼空结构;左:审计悖论尾部",
+     "anchor_low_2026": 399.17
+    },
+    "HYPE": {
+     "conservative": [
+      90,
+      110
+     ],
+     "base": [
+      120,
+      170
+     ],
+     "optimistic": 250,
+     "main_band": "base",
+     "skew": "left",
+     "skew_reason": "收入下行+滴漏/回购38:1;右尾=CFTC通道",
+     "anchor_low_2026": 53.31
+    }
+   }
+  },
+  "mech_rehab": {
+   "note": "出局币机制翻案层(v1.6,2026-08-30):标的已被出局序列判\"死\"(UNI 顶对顶 0.43×=纪录、2026 低破 2022 低=主流唯一),档位存在的唯一理由是给机制翻案假说一个可记分的形状;认识论地位低于新周期层。乐观档为纯条件档:UNIfication 销毁比值判定(2026-09-30 回填)>5% 才成立,<2% 当日作废",
+   "coins": {
+    "UNI": {
+     "conservative": [
+      6.2,
+      8.0
+     ],
+     "base": [
+      5.0,
+      6.3
+     ],
+     "optimistic": 18.6,
+     "main_band": "conservative",
+     "skew": "right",
+     "skew_reason": "右尾全部挂在 UNIfication 销毁比值判定(09-30 回填,>5% 激活/<2% 作废);左尾=出局延续,已由档位低位表达",
+     "anchor_low_2026": 2.394,
+     "note": "推导见《下轮牛市主流币高点推测》v1.6:顶对顶 [6.2,8.0](0.432 重复~按出局步长 ×0.77 再衰减);低→顶 [5.0,6.3](5.12× 套 BTC 隐含衰减族 0.41-0.51,⚠ 2026 低破 2022 低使锚自带失真);现价已在基准档内=\"出局\"是算术不是形容词"
+    }
+   }
   }
+ },
+ "revisions": [
+  {
+   "date": "2026-08-30",
+   "entry": "新增 mech_rehab 层(UNI);母文档《下轮牛市主流币高点推测》v1.6;旧档未动"
+  }
+ ]
 }
