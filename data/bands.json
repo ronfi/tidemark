@@ -164,7 +164,20 @@
       13.0,
       18.6
      ],
-     "confidence": "low"
+     "confidence": "low",
+     "superseded_record": {
+      "old_main": "conservative",
+      "old_band": [
+       6.2,
+       8.0
+      ],
+      "written": "2026-08-30",
+      "breached": "2026-09-02",
+      "breach_close": 6.23,
+      "days_after_writing": 3,
+      "reason": "方法出域(KB §4(h)):衰减法样本为机制未变老币,UNIfication 已生效"
+     },
+     "burn_caliber": "流:滚动窗口 Transfer(→0xdEaD) 事件合计;分母=流通量(链上直读,非 CG);30d 年化 25.82M ⇒ ÷总供给 2.58% / ÷流通 ≈4.14%(2026-09-02)"
     }
    }
   }
