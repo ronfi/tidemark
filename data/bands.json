@@ -177,7 +177,7 @@
       "days_after_writing": 3,
       "reason": "方法出域(KB §4(h)):衰减法样本为机制未变老币,UNIfication 已生效"
      },
-     "burn_caliber": "流:滚动窗口 Transfer(→0xdEaD) 事件合计;分母=流通量(链上直读,非 CG);30d 年化 25.82M ⇒ ÷总供给 2.58% / ÷流通 ≈4.14%(2026-09-02)"
+     "burn_caliber": "流:30d Transfer(→0xdEaD) Σ ×365/30 ÷ 链上流通(totalSupply − Timelock 0x1a9C…35BC − 0xdEaD,同块)= 4.15%(2026-09-02,区块 25887832);判定线 >5% / <2%;分子分母同块、Timelock 大额变动=拨款非销毁"
     }
    }
   }
